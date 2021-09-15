@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.min.css" />
+    <title>Todo List</title>
+  </head>
+  <body>
+    <main>
+      <div id="input">
+        <label>タスク : <input id="todo" autofocus placeholder="タスクを入力" /></label><br />
+        優先度 :
+        <select>
+          <option>低</option>
+          <option selected>中</option>
+          <option>高</option>
+        </select>
+        <label><br /><span>期日</span> : <input type="date" /></label><br />
+        <button id="submit">登録</button>
+      </div>
+
+      <div class="functionbox">
+        <details>
+          <summary>絞り込み</summary>
+          <p id="priority" class="ptext">優先度 (高)</p>
+          <p id="priority2" class="ptext">優先度 (中)</p>
+          <p id="priority3" class="ptext">優先度 (低)</p>
+          <p id="all" class="ptext">全表示</p>
+        </details>
+      </div>
+      <table>
+        <tr>
+          <th id="todoLabel">タスク</th>
+          <th>優先度</th>
+          <th id="dateLabel">期日</th>
+          <th>完了</th>
+        </tr>
+      </table>
+      <div class="btnwrapper"><button id="remove">完了済み削除</button></div>
+    </main>
+    <footer><p>&copy; Task List</p></footer>
+    <script src="script.js"></script>
+  </body>
+</html>
